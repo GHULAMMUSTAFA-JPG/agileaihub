@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Navbar from "@/app/component/Navbar/Navbar";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const avantgardebookbt = localFont({
+  src: [
+    {
+      path: "./fonts/avantgardebookbt.ttf", // Correct path to the regular font
+      weight: "400", // Regular weight
+    },
+    {
+      path: "./fonts/avantgardedemibt.ttf", // Correct path to the medium font
+      weight: "500", // Medium weight
+    },
+    {
+      path: "./fonts/avantgardedemiobliquebt.ttf", // Correct path to the bold font
+      weight: "700", // Bold weight
+    },
+  ],
+  variable: "--font-avantgardebookbt", // CSS variable for global use
 });
 
 export const metadata: Metadata = {
@@ -25,9 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${avantgardebookbt.variable}   antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
