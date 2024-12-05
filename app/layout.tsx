@@ -6,19 +6,19 @@ import "./globals.css";
 const avantgardebookbt = localFont({
   src: [
     {
-      path: "./fonts/avantgardebookbt.ttf", // Correct path to the regular font
-      weight: "400", // Regular weight
+      path: "./fonts/avantgardebookbt.ttf",
+      weight: "400",
     },
     {
-      path: "./fonts/avantgardedemibt.ttf", // Correct path to the medium font
-      weight: "500", // Medium weight
+      path: "./fonts/avantgardedemibt.ttf",
+      weight: "500",
     },
     {
-      path: "./fonts/avantgardedemiobliquebt.ttf", // Correct path to the bold font
-      weight: "700", // Bold weight
+      path: "./fonts/avantgardedemiobliquebt.ttf",
+      weight: "700",
     },
   ],
-  variable: "--font-avantgardebookbt", // CSS variable for global use
+  variable: "--font-avantgardebookbt",
 });
 
 export const metadata: Metadata = {
