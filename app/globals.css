@@ -9,3 +9,45 @@ body {
 input::placeholder {
   font-size: 1rem !important; /* Adjust the size as needed */
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 10s linear infinite;
+  will-change: transform;
+}
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --background: rgba(247, 249, 252, 1);
+  --body-regular-body-2-font-family: "Inter", Helvetica;
+  --body-regular-body-2-font-size: 16px;
+  --body-regular-body-2-font-style: normal;
+  --body-regular-body-2-font-weight: 400;
+  --body-regular-body-2-letter-spacing: 0px;
+  --body-regular-body-2-line-height: 24px;
+  --body-text: rgba(132, 146, 167, 1);
+  --brandinfo: rgba(33, 148, 243, 1);
+  --dark: rgba(34, 45, 57, 1);
+  --dark-shade: rgba(132, 146, 167, 1);
+  --gray-900: rgba(42, 51, 66, 1);
+  --line-shape: rgba(222, 231, 238, 1);
+  --neutralgrey: rgba(113, 113, 113, 1);
+  --neutralwhite: rgba(255, 255, 255, 1);
+  --primary: rgba(0, 138, 255, 1);
+  --text-on-dark: rgba(173, 183, 194, 1);
+  --white: rgba(255, 255, 255, 1);
+}

@@ -56,7 +56,7 @@ const Header = () => {
               placeholder="Enter your email address"
               value={emailField}
               onChange={(e) => setInputField(e.target.value)}
-              className="bg-transparent border-b-2 border-white text-white py-2 px-4 outline-none placeholder:text-gray-500 placeholder:text-md w-[80%]"
+              className="bg-transparent border-b-2 border-white text-black py-2 px-4 outline-none placeholder:text-gray-500 placeholder:text-md w-[80%]"
             />
 
             {/* Get Started Button */}
